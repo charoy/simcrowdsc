@@ -149,7 +149,7 @@ def photograding(nbgrad,pictures,lat,long,scale,k,wquality,groundtruth):
 def finalresult(photoselection,votecount,lat,long,groundtruth):
     finalcounter=0
     exactresult=0
-    finalresult=[[0 for col in range(long+1)] for row in range(lat+1)]
+    finalresult=[[-1 for col in range(long+1)] for row in range(lat+1)]
     for i in range (0,lat):
         for j in range (0,long):
             if (photoselection[i][j]==[]):
