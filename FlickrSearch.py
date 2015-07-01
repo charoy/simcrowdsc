@@ -32,6 +32,9 @@ for d in range(7):
             except:
                 print "Unexpected error"
                 pass
-        p= flickr_api.Photo.search(bbox=area,min_upload_date=str(starttime),max_upload_date=str(starttime+duration),page=j)
-        print(p)
+        try:
+            p= flickr_api.Photo.search(bbox=area,min_upload_date=str(starttime),max_upload_date=str(starttime+duration),page=j)
+            print(p)
+        except:
+            print("search error "+j+" "+d)
     result.close()
