@@ -17,7 +17,7 @@ for d in range(7):
     print p.info.pages # the number of available pages of results
     print p.info.page  # the current page number
     print p.info.total # total number of photos
-    result=open(str(d)+"positions.csv","w")
+    result=open(str(d)+"spositions.csv","w")
     for j in range(p.info.pages):
         for i in p:
             try:
@@ -27,8 +27,8 @@ for d in range(7):
                 link=flickr_api.Photo.getPhotoFile(i,size_label = 'Large')
                 info=flickr_api.Photo.getInfo(i)
                 print info
-                result.write(link+";"+str(loc.latitude)+";"+str(loc.longitude)+";"+str(info)+"\n")
-                # i.save("images/"+"day"+str(d+1)+"-"+str(i.id)+".jpg",size_label = 'Medium 640')
+                result.write(link+";"+str(loc.latitude)+";"+str(loc.longitude)+"\n")
+                i.save("images/"+"day"+str(d+1)+"-"+str(i.id)+".jpg",size_label = 'Large')
             except:
                 print "Unexpected error"
                 pass
