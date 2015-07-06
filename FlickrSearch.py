@@ -7,7 +7,7 @@ __author__ = 'charoy'
 user = flickr_api.Person.findByUserName("francois54")
 print(user)
 area="-74.5354,40.2275,-73.2567,40.9926"
-starttime=1351468800 # oct 10 2012
+starttime=1351468800 # Mon, 29 Oct 2012 00:00:00 GMT
 duration=86400 # one day
 
 for d in range(7):
@@ -33,7 +33,7 @@ for d in range(7):
                 print "Unexpected error"
                 pass
         try:
-            p= flickr_api.Photo.search(bbox=area,min_upload_date=str(starttime),max_upload_date=str(starttime+duration),page=j)
+            p= flickr_api.Photo.search(bbox=area,min_taken_date=str(starttime),max_taken_date=str(starttime+duration),page=j)
             starttime=starttime+duration
             print(p)
         except:
