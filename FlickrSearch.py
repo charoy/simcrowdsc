@@ -34,8 +34,8 @@ for d in range(7):
                 pass
         try:
             p= flickr_api.Photo.search(bbox=area,min_taken_date=str(starttime),max_taken_date=str(starttime+duration),page=j)
-            starttime=starttime+duration
             print(p)
         except:
             print("search error "+j+" "+d)
+    starttime=starttime+duration
     result.close()
