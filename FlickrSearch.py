@@ -27,7 +27,8 @@ for d in range(7):
                 link=flickr_api.Photo.getPhotoFile(i,size_label = 'Large')
                 info=flickr_api.Photo.getInfo(i)
                 print info
-                result.write(link+";"+str(loc.latitude)+";"+str(loc.longitude)+";"+info.title+"\n")
+                print(  info['title'])
+                result.write(link+";"+str(loc.latitude)+";"+str(loc.longitude)+";"+info['title']+"\n")
                 i.save("images/"+"day"+str(d+1)+"-"+str(i.id)+".jpg",size_label = 'Large')
             except:
                 print "Unexpected error"
