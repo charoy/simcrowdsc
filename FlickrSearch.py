@@ -6,8 +6,14 @@ __author__ = 'charoy'
 
 user = flickr_api.Person.findByUserName("francois54")
 print(user)
-area="-74.5354,40.2275,-73.2567,40.9926"
-starttime=1351468800 # Mon, 29 Oct 2012 00:00:00 GMT
+#NY
+#area="-74.5354,40.2275,-73.2567,40.9926"
+#starttime=1351468800 # Mon, 29 Oct 2012 00:00:00 GMT
+
+#Christchurch
+area="172.416687,-43.393074,172.817688,-43.664891"
+starttime=1298332800 # Tue, 22 Feb 2011 00:00:00 GMT
+
 duration=86400 # one day
 
 for d in range(7):
