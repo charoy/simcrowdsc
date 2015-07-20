@@ -11,12 +11,16 @@ print(user)
 #starttime=1351468800 # Mon, 29 Oct 2012 00:00:00 GMT
 
 #Christchurch
-area="172.4166,-43.6648,172.8176,-43.3930"
-starttime=1298332800 # Tue, 22 Feb 2011 00:00:00 GMT
+#area="172.4166,-43.6648,172.8176,-43.3930"
+#starttime=1298332800 # Tue, 22 Feb 2011 00:00:00 GMT
+
+#tacloban
+area="124.904938,11.180687,125.030594,11.352143"
+starttime=1383696000 #  Wed, 06 Nov 2013 00:00:00 GMT
 
 duration=86400 # one day
 
-for d in range(7):
+for d in range(10):
     p= flickr_api.Photo.search(bbox=area,min_taken_date=str(starttime),max_taken_date=str(starttime+duration),page=1)
     print ("Day "+str(d))
     print(p)
