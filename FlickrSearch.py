@@ -15,8 +15,13 @@ print(user)
 #starttime=1298332800 # Tue, 22 Feb 2011 00:00:00 GMT
 
 #tacloban
-area="124.738829,11.115,125.139069,11.467063"
-starttime=1383696000 #  Wed, 06 Nov 2013 00:00:00 GMT
+#area="124.738829,11.115,125.139069,11.467063"
+#starttime=1383696000 #  Wed, 06 Nov 2013 00:00:00 GMT
+
+#leipzig
+area="12.141953,51.192685,12.622604,51.436461"
+starttime=1370217600 #  Mon, 03 Jun 2013 00:00:00 GMT
+
 
 duration=86400 # one day
 
