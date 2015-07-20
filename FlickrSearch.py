@@ -11,7 +11,7 @@ print(user)
 #starttime=1351468800 # Mon, 29 Oct 2012 00:00:00 GMT
 
 #Christchurch
-area="172.4166,-43.3930,172.8176,-43.6648"
+area="172.4166,-43.6648,172.8176,-43.3930"
 starttime=1298332800 # Tue, 22 Feb 2011 00:00:00 GMT
 
 duration=86400 # one day
